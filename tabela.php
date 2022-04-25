@@ -61,8 +61,8 @@ $listarSQL = mysqli_query($conexaoBD, $sql);
       <td><?php echo $usuario['cpf'] ?></td>
       <td><?php echo $usuario['rg'] ?></td>
       <td>
-        <a href="javascript: if(confirm('Tem Certeza que deseja deletar o bombeiro <?php echo $usuario['nome']; ?> ?')) location.href=' deletar.php?id=<?php echo $usuario['nmatricula']; ?>';" class="btn btn-sm btn-danger">Deletar</a>
-        
+        <!-- //<a href="javascript: if(confirm('Tem Certeza que deseja deletar o bombeiro <?php echo $usuario['nome']; ?> ?')) location.href=' deletar.php?id=<?php echo $usuario['nmatricula']; ?>';" class="btn btn-sm btn-danger">Deletar</a>/ -->
+        <a href="deletar.php?nmatricula=<?php echo $usuario['nmatricula'];?>" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Deletar</a>
       </td>
        <td>
         <a href="editar.php?nmatricula=<?php echo $usuario['nmatricula'];?>" class="btn btn-sm btn-primary">Editar</a>
@@ -73,6 +73,32 @@ $listarSQL = mysqli_query($conexaoBD, $sql);
   </div>
 </table>
 <a href="formulario.php" class="btn btn-sm btn-success">Página inicial</a>
+</div>
+
+
+
+
+
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" location.href='deletar.php?id=<?php echo $usuario['nmatricula']; ?>';>Sim</button>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>
