@@ -62,7 +62,7 @@ $listarSQL = mysqli_query($conexaoBD, $sql);
       <td><?php echo $usuario['rg'] ?></td>
       <td>
         <!-- //<a href="javascript: if(confirm('Tem Certeza que deseja deletar o bombeiro <?php echo $usuario['nome']; ?> ?')) location.href=' deletar.php?id=<?php echo $usuario['nmatricula']; ?>';" class="btn btn-sm btn-danger">Deletar</a>/ -->
-        <a href="deletar.php?nmatricula=<?php echo $usuario['nmatricula'];?>" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Deletar</a>
+        <a class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Deletar</a>
       </td>
        <td>
         <a href="editar.php?nmatricula=<?php echo $usuario['nmatricula'];?>" class="btn btn-sm btn-primary">Editar</a>
@@ -94,8 +94,11 @@ $listarSQL = mysqli_query($conexaoBD, $sql);
         ...
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary" location.href='deletar.php?id=<?php echo $usuario['nmatricula']; ?>';>Sim</button>
+      <form action="deletar.php" method="POST">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button class="btn btn-primary">Sim</button>
+      </form>
+        
       </div>
     </div>
   </div>
