@@ -1,6 +1,6 @@
 <?php 
 include 'conexao.php';
-$id= $_GET['id'];
+$id= $_GET["id"];
 
 if(isset( $_GET['id'])) {
 $sql = mysqli_query($conexaoBD, "DELETE FROM bombeiro WHERE nmatricula ={$id}");
