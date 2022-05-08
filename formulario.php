@@ -6,8 +6,6 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 <link rel="Stylesheet" type="text/css" href="formulario.css">
-
-
 	<title>FORMULÁRIO DE CADASTRO</title>
 </head>
 <body>
@@ -15,7 +13,7 @@
 <h1> CADASTRO DE BOMBEIROS</h1>
 
 <form method="POST" action="salvar.php">
-  
+  <fieldset>
     <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nome:</label>
     <input type="text" class="form-control" name="nome" required>
@@ -57,6 +55,7 @@
   <button type="submit" class="btn btn-success">Enviar</button>
   <a href="tabela.php" class="btn btn-sm btn-primary">Cadastros</a>
   <a href="home.html" class="btn btn-sm btn-danger">Sair</a>
+</fieldset>
 </form>
 </div>
 </body>
