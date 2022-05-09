@@ -14,44 +14,60 @@
 
 <form method="POST" action="salvar.php">
   <fieldset>
-    <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nome:</label>
-    <input type="text" class="form-control" name="nome" required>
-    
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Email</label>
-    <input type="text" class="form-control" name="email" required>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Telefone</label>
-    <input type="text" class="form-control" name="telefone" required>
-  </div>
-  <div class="mb-3">
-    <p>sexo <br>
-    <select name="sexo">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-sm">
+        <label for="exampleInputEmail1" class="form-label">Nome:</label>
+        <input type="text" class="form-control" name="nome" required>
+        </div>
+        
+        <div class="col-sm">
+        <label for="exampleInputPassword1" class="form-label">Email</label>
+        <input type="text" class="form-control" name="email" required>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="col-sm">
+        <label for="exampleInputPassword1" class="form-label">Telefone</label>
+        <input type="text" class="form-control" name="telefone" required>
+        </div>
+
+        <div class="col-sm">
+        <p>sexo <br>
+      <select name="sexo">
       <option selected></option>
       <option>Masculino</option>
       <option >Feminino</option>
       <option >outro</option>
 </select>
-  </div>
-  <div class="mb-3">
+</div>
+
+  <div class="row">
+  <div class="col-sm">
     <label for="exampleInputPassword1" class="form-label">Data de Nascimento</label>
     <input type="date" class="form-control" name="datanasc" required>
   </div>
-  <div class="mb-3">
+  
+  <div class="col-sm">
     <label for="exampleInputPassword1" class="form-label">Endereço</label>
     <input type="text" class="form-control" name="endereco" required>
   </div>
-  <div class="mb-3">
+
+
+ <div class="row">
+   <div class="col-sm">
     <label for="exampleInputPassword1" class="form-label">CPF</label>
     <input type="text" class="form-control" name="cpf" required>
   </div> 
-  <div class="mb-3">
+
+  <div class="col-sm">
     <label for="exampleInputPassword1" class="form-label">RG</label>
     <input type="text" class="form-control" name="rg" required>
+</div>
   </div> 
+  
   <button type="submit" class="btn btn-success">Enviar</button>
   <a href="tabela.php" class="btn btn-sm btn-primary">Cadastros</a>
   <a href="home.html" class="btn btn-sm btn-danger">Sair</a>
