@@ -11,9 +11,7 @@
 </head>
 
 <body>
-  <br>
-  <br>
-  <div class="container col-md-6 offset-md-3">
+  <div class="container col-md-6 offset-md-3 "> 
     <h1> CADASTRO DE BOMBEIROS</h1>
 
     <form method="POST" action="salvar.php">

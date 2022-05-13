@@ -1,5 +1,5 @@
 .container {  
-    background-color: rgb(255, 17, 0);
+    background-color: #030000;
 }
 body{   
     background-color: 	#d1b4b446;  
@@ -15,5 +15,15 @@ h1{
     text-align: center;  
 }
 body{
-    background-color: rgb(255, 127, 170);
+    /*padding-top:10vh;
+    background-image: url('../login/img/3.png');
+    background-position: cover;
+    background-position-y: -150px;*/
+}
+
+body{
+    background-color: #d20a00;
+    height: 200h;
+    padding-top:20vh;
+    
 }
