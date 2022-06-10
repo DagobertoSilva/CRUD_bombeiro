@@ -15,7 +15,7 @@
     <h1> CADASTRO DE BOMBEIROS</h1>
 
     <form method="POST" action="salvar.php">
-      <fieldset>
+      
         <div class="container">
           <div class="row">
 
@@ -77,8 +77,9 @@
           <a href="home.html" class="btn btn-sm btn-danger">Sair</a>
           <a href="tabela.php" class="btn btn-sm btn-primary">Cadastros</a>
           <button type="submit" class="btn btn-success">Enviar</button>
+          
           <br>
-      </fieldset>
+      
     </form>
   </div>
 
