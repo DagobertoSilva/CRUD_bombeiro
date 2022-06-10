@@ -76,7 +76,11 @@
 
           <a href="home.html" class="btn btn-sm btn-danger">Sair</a>
           <a href="tabela.php" class="btn btn-sm btn-primary">Cadastros</a>
+          <a href="formulario.php" class="btn btn-sm btn-warning">cancelar
+
+          </a>
           <button type="submit" class="btn btn-success">Enviar</button>
+
           
           <br>
       
