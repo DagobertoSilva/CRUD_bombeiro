@@ -52,52 +52,67 @@ if (isset($_POST['editar'])) {
   <div class="container col-md-6 offset-md-3">
     <h1>EDIÇÃO DE FORMULÁRIO </h1>
     <form method="POST">
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Nome:</label>
-        <input type="text" class="form-control" name="nome" value="<?php echo $nome; ?>">
-      </div>
+      <div class="container">
+        <div class="row">
 
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Email</label>
-        <input type="email" class="form-control" name="email" value="<?php echo $email; ?>">
-      </div>
+          <div class="col-sm">
+            <label for="exampleInputEmail1" class="form-label">Nome:</label>
+            <input type="text" class="form-control" name="nome" value="<?php echo $nome; ?>">
+          </div>
 
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Telefone</label>
-        <input type="text" class="form-control" name="telefone" value="<?php echo $telefone; ?>">
-      </div>
+          <div class="col-sm">
+            <label for="exampleInputPassword1" class="form-label">Email</label>
+            <input type="text" class="form-control" name="email" value="<?php echo $email; ?>">
+          </div>
+        </div>
 
-      <div class="mb-3">
+        <div class="row">
 
-        <p>sexo <br>
-          <select name="sexo">
-            <option></option>
-            <option value="Masculino" <?= ($sexo == 'Masculino') ? 'selected' : '' ?>>Masculino</option>
-            <option value="Feminino" <?= ($sexo == 'Feminino') ? 'selected' : '' ?>>Feminino</option>
-            <option value="outro" <?= ($sexo == 'outro') ? 'selected' : '' ?>>outro</option>
-          </select>
+          <div class="col-sm-6">
+            <label class="form-label">Telefone</label>
+            <input type="text" class="form-control" name="telefone" value="<?php echo $telefone; ?>">
+          </div>
+
+          <div class="col-sm-3">
+            <label for="">Sexo</label>
+            <select name="sexo" class="form-control">
+              <option></option>
+              <option value="Masculino" <?= ($sexo == 'Masculino') ? 'selected' : '' ?>>Masculino</option>
+              <option value="Feminino" <?= ($sexo == 'Feminino') ? 'selected' : '' ?>>Feminino</option>
+              <option value="outro" <?= ($sexo == 'outro') ? 'selected' : '' ?>>outro</option>
+            </select>
+
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-sm">
+            <label for="exampleInputPassword1" class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" name="datanasc" value="<?php echo $datanasc; ?>">
+          </div>
 
 
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Data de Nascimento</label>
-        <input type="date" class="form-control" name="datanasc" value="<?php echo $datanasc; ?>">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Endereço</label>
-        <input type="text" class="form-control" name="endereco" value="<?php echo $endereco; ?>">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">CPF</label>
-        <input type="text" class="form-control" name="cpf" value="<?php echo $cpf; ?>">
-      </div>
+          <div class="col-sm">
+            <label for="exampleInputPassword1" class="form-label">Endereço</label>
+            <input type="text" class="form-control" name="endereco" value="<?php echo $endereco; ?>">
+          </div>
+        </div>
 
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">RG</label>
-        <input type="text" class="form-control" name="rg" value="<?php echo $rg; ?>">
-      </div>
+        <div class="row">
+          <div class="col-sm">
+            <label for="exampleInputPassword1" class="form-label">CPF</label>
+            <input type="text" class="form-control" name="cpf" value="<?php echo $cpf; ?>">
+          </div>
 
-      <button name="editar" type="submit" class="btn btn-primary">Editar</button>
+          <div class="col-sm">
+            <label for="exampleInputPassword1" class="form-label">RG</label>
+            <input type="text" class="form-control" name="rg" value="<?php echo $rg;?>">
+          </div>
+        </div>
+        <br>
+
+        <button name="editar" type="submit" class="btn btn-primary">Editar</button>
+        <a href="tabela.php" class="btn btn-sm btn-primary">Voltar</a>
     </form>
   </div>
   </div>
