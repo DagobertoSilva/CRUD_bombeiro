@@ -76,7 +76,7 @@ if (isset($_POST['editar'])) {
           <div class="col-sm-3">
             <label for="">Sexo</label>
             <select name="sexo" class="form-control">
-              <option></option>
+              <option>...</option>
               <option value="Masculino" <?= ($sexo == 'Masculino') ? 'selected' : '' ?>>Masculino</option>
               <option value="Feminino" <?= ($sexo == 'Feminino') ? 'selected' : '' ?>>Feminino</option>
               <option value="outro" <?= ($sexo == 'outro') ? 'selected' : '' ?>>outro</option>
